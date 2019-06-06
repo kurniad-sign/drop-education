@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Drop Education</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" media="screen" href="css/main.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.0.2/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header role="banner">
+			<nav role="navigation" class="c-nav c-nav__primary">
+				<div class="c-nav__row ly-container">
+					<div class="c-logo">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="126"
+							height="50"
+							viewBox="0 0 126 50"
+						>
+							<image
+								id="logo"
+								width="126"
+								height="50"
+								xlink:href="data:img/png;base64,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"
+							/>
+						</svg>
+					</div>
+					<div class="c-nav__burger ut--desktop-hidden">
+							<i class='bx bx-menu'></i>
+					</div>
+					<ul class="c-nav__list ut--mobile-hidden">
+						<li class="c-nav__list-item"><a href="#">Home</a></li>
+						<li class="c-nav__list-item"><a href="#">Services</a></li>
+						<li class="c-nav__list-item"><a href="#">Product</a></li>
+						<li class="c-nav__list-item"><a href="#">Contact</a></li>
+						<li class="c-nav__list-item"><a href="#" class="c-button ut--primary c-nav__cta">Sign in</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main role="main">
+			<section class="pg-hero">
+				<div class="ly-container">
+					<div class="ly-grid gt--col-2 gt--mobile-col-1 gt--center">
+						<div class="pg-hero__ilustration">
+							<img
+								src="assets/images/main-illustration.png"
+								alt="main illustration"
+							/>
+						</div>
+						<div class="pg-hero__content">
+							<header class="pg-hero__headline">
+								<h1 class="pg-hero__title">Education for all</h1>
+							</header>
+							<p class="pg-hero__copy">
+								A bank is a financial institution that accepts deposits from the
+								public and creates credit. For all of your financial needs
+							</p>
+							<a href="#" class="c-button ut--primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-section">
+				<div class="ly-container ly-grid gt--col-2 gt--mobile-col-1">
+					<div class="pg-admission__form">
+						<div class="c-card">
+							<div class="c-card__header">
+								<p class="ty--title-3">Apply for admission</p>
+							</div>
+							<div class="c-card__body">
+								<form>
+									<p class="c-card__title ut--text-center">Make it more simple!</p>
+									<div class="c-input-group">
+										<input
+											type="email"
+											name="admission"
+											id="admission"
+											placeholder="Input your email here" class="c-input"
+										/>
+										<button type="submit" class="c-button ut--dark pg-admission__cta">
+											<i class="bx bx-send"></i>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="pg-admission c-carousel">
+						<blockquote class="pg-admission__quote">
+							<p>
+								"Before Course city, I was working two minimum wage jobs. Now, &
+								new life!"I learned most of my programming skills and through
+								self-study and the material available.
+							</p>
+							<p><strong>Stephanie</strong></p>
+						</blockquote>
+						<div class="c-carousel__indicator">
+							<div class="c-carousel__indicator-item"></div>
+							<div class="c-carousel__indicator-item"></div>
+							<div class="c-carousel__indicator-item"></div>
+							<div class="c-carousel__indicator-item is-active"></div>
+							<div class="c-carousel__indicator-item"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-feature">
+				<div class="ly-container">
+					<div class="ly-grid gt--gap-5">
+						<div class="pg-feature__block ly-grid gt--col-2 gt--mobile-col-1 gt--center">
+							<div class="pg-feature__illustration">
+								<img
+									src="assets/images/feature-illustration-1.png"
+									alt="ilustration 1"
+								/>
+							</div>
+							<div class="pg-feature__content">
+								<h2 class="pg-feature__title">
+									Welcome to Eduin university, Constant self-improvement as an
+									instructor.
+								</h2>
+								<p class="pg-feature__copy">
+									Education City is initiative of our Qatar Foundation for
+									Education, Science and Community Development. Education City
+									initiative of our Qatar Foundation for Education, Science and
+									Community Development.
+								</p>
+								<p class="pg-feature__copy">
+									Education City is initiative of our Qatar Foundation for
+									Education, Science and Community Development. Education City
+									initiative of our Qatar Foundation for Education.
+								</p>
+							</div>
+						</div>
+						<div class="pg-feature__block ly-grid gt--col-2 gt--mobile-col-1 gt--center">
+							<div class="pg-feature__illustration">
+								<img
+									src="assets/images/feature-illustration-2.png"
+									alt="ilustration 1"
+								/>
+							</div>
+							<div class="pg-feature__content">
+								<h2 class="pg-feature__title">
+									Welcome to Eduin university, Constant self-improvement as an
+									instructor.
+								</h2>
+								<p class="pg-feature__copy">
+									Education City is initiative of our Qatar Foundation for
+									Education, Science and Community Development. Education City
+									initiative of our Qatar Foundation for Education, Science and
+									Community Development.
+								</p>
+								<p class="pg-feature__copy">
+									Education City is initiative of our Qatar Foundation for
+									Education, Science and Community Development. Education City
+									initiative of our Qatar Foundation for Education.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pg-service">
+				<div class="ly-container">
+					<h2 class="ut--no-text">
+						Services
+					</h2>
+					<div class="ly-grid gt--col-3 gt--mobile-col-1 gt--center">
+						<div class="pg-service__item">
+							<img
+								src="assets/images/icons-global-citizen.png"
+								alt="icon 1"
+								class="pg-service__icon__item"
+							/>
+							<p class="pg-service__title">
+								Global Student
+							</p>
+							<p class="pg-service__desc">
+								Education City is initiative of our Qatar Foundation for
+								Education, Science Community Development.
+							</p>
+						</div>
+						<div class="pg-service__item">
+							<img
+								src="assets/images/icon-brainstorm-skill.png"
+								alt="icon 2"
+								class="pg-service__icon__item"
+							/>
+							<p class="pg-service__title">
+								Success Rate
+							</p>
+							<p class="pg-service__desc">
+								Education City is initiative of our Qatar Foundation for
+								Education, Science Community Development.
+							</p>
+						</div>
+						<div class="pg-service__item">
+							<img
+								src="assets/images/icon-graduation-cap.png"
+								alt="icon 3"
+								class="pg-service__icon__item"
+							/>
+							<p class="pg-service__title">
+								Success Rate
+							</p>
+							<p class="pg-service__desc">
+								Education City is initiative of our Qatar Foundation for
+								Education, Science Community Development.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="c-nav pg-footer">
+			<div class="ly-container">
+				<div class="c-nav__footer-row">
+					<div class="pg-footer__copy">
+						<p>&copy; 2019 Roy Design, All right Reserved</p>
+					</div>
+					<nav class="c-nav__footer__meta-links">
+						<a href="#" class="c-nav__footer__meta-item">About Company</a>
+						<a href="#" class="c-nav__footer__meta-item">Privacy Policy</a>
+						<a href="#" class="c-nav__footer__meta-item">Help Center</a>
+						<a href="#" class="c-nav__footer__meta-item">Terms</a>
+						<a href="#" class="c-nav__footer__meta-item">Site Map</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
