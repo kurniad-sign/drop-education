@@ -1,0 +1,41 @@
+{
+	"name": "drop-education",
+	"version": "1.0.0",
+	"description": "Drop Education - education for all",
+	"main": "index.js",
+	"scripts": {
+		"autoprefixer-css": "postcss --use autoprefixer --map false --output dist/css/main.css dist/css/main.css",
+		"watch-css": "node-sass scss/main.scss dist/css/main.css --watch",
+		"build-css": "node-sass --source-map true --output-style expanded scss/main.scss dist/css/main.css ",
+		"clear-css": "rimraf dist/css",
+		"cleancss-css": "cleancss -o dist/css/main.min.css dist/css/main.css",
+		"build": "npm run clear-css && npm run build-css && npm run autoprefixer-css && npm run cleancss-css",
+		"deploy": "gh-pages -d dist",
+		"run-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory --port 7777",
+		"start": "npm run run-server && npm run watch-css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kurniad-sign/drop-education.git"
+	},
+	"keywords": [
+		"Drop",
+		"Education",
+		"Drop Education"
+	],
+	"author": "Agung Kurniadi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kurniad-sign/drop-education/issues"
+	},
+	"homepage": "https://kurniad-sign.github.io/drop-education",
+	"devDependencies": {
+		"autoprefixer": "^9.5.1",
+		"browser-sync": "^2.26.5",
+		"clean-css-cli": "^4.3.0",
+		"gh-pages": "^2.0.1",
+		"node-sass": "^4.12.0",
+		"postcss-cli": "^6.1.2",
+		"rimraf": "^2.6.3"
+	}
+}
