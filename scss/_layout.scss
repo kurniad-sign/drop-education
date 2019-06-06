@@ -1,0 +1,40 @@
+.ut--no-text {
+	display: none;
+}
+
+.ut--text-center {
+  text-align: center;
+}
+
+.ly-container {
+	padding: 0 6vw;
+	margin: 0 auto;
+}
+
+.ly-grid {
+	display: grid;
+	grid-gap: $gap;
+}
+
+.gt--gap-5 {
+	grid-gap: $gap * 4;
+}
+
+.gt--col-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gt--col-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gt--mobile-col-1 {
+	@include mobile-breakpoint {
+		grid-template-columns: 1fr;
+	}
+}
+
+.gt--center {
+	align-items: center;
+  justify-items: center;
+}

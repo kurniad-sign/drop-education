@@ -1,0 +1,11 @@
+.ut--mobile-hidden {
+	@include mobile-breakpoint {
+		display: none;
+	}
+}
+
+.ut--desktop-hidden {
+	@include desktop-breakpoint {
+		display: none;
+	}
+}

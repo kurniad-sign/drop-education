@@ -1,0 +1,126 @@
+.pg-hero {
+	background-color: $blue;
+	padding-top: 14rem;
+	padding-bottom: 6rem;
+	@include desktop-breakpoint {
+		padding-bottom: 10rem;
+		padding-top: 17rem;
+	}
+
+	&__content {
+		color: $white;
+		text-align: center;
+		padding: 3.5rem 0;
+		@include desktop-breakpoint {
+			text-align: left;
+			order: -1;
+		}
+
+		.pg-hero__headline {
+			margin-bottom: 4rem;
+			line-height: 1;
+		}
+
+		.pg-hero__headline h1 {
+			font-size: 3.2rem;
+			color: $white;
+			margin: 0;
+			@include desktop-breakpoint {
+				font-size: 7rem;
+			}
+		}
+
+		.pg-hero__copy {
+			margin-bottom: 5rem;
+			line-height: 1.8;
+		}
+	}
+}
+
+.pg-section {
+	padding: 8rem 0;
+}
+
+.pg-admission {
+	position: relative;
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__quote {
+		text-align: center;
+		font-style: italic;
+
+		& > p {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.pg-feature {
+	position: relative;
+	padding: 8rem 0;
+
+	&__block:last-child .pg-feature__illustration {
+		@include desktop-breakpoint {
+			order: 1;
+		}
+	}
+
+	&__illustration {
+		padding: 3.5rem;
+	}
+
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 2rem;
+		@include desktop-breakpoint {
+			font-size: 3.6rem;
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&__copy {
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+	}
+}
+
+.pg-service {
+	position: relative;
+	padding-bottom: 10rem;
+	padding-top: 5rem;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__icon__item {
+		margin-bottom: 2.5rem;
+	}
+
+	&__title {
+		font-size: 2.2rem;
+		font-weight: $font-bold;
+		color: $dark-gray;
+		margin-bottom: 2rem;
+	}
+
+	&__desc {
+		margin-bottom: 2rem;
+		@include desktop-breakpoint {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.pg-footer {
+	padding: 1rem 0;
+}
