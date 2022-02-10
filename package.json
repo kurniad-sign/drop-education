@@ -34,7 +34,7 @@
 		"browser-sync": "^2.26.5",
 		"clean-css-cli": "^4.3.0",
 		"gh-pages": "^2.0.1",
-		"node-sass": "^4.12.0",
+		"node-sass": "^7.0.0",
 		"postcss-cli": "^6.1.2",
 		"rimraf": "^2.6.3"
 	}
